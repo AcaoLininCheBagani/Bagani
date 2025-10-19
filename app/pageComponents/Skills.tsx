@@ -22,7 +22,7 @@ export default function Skills() {
                 </p>
                 <div>
                     <CardContent>
-                        <p className="mt-3">
+                        <p className="mt-3 text-[0.875rem]">
                             I build scalable web applications using modern full-stack technologies.
                         </p>
                         <div className="flex flex-wrap gap-4 mt-5 mb-5">
