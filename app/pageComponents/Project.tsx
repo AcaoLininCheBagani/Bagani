@@ -3,6 +3,12 @@ import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { ExternalLink } from "lucide-react";
 export default function Project() {
+  const lng = [
+    {l:'React'},
+    {l:'Laravel'},
+    {l:'Firebase'},
+    {l:'React Native'},
+  ]
   return (
     <Card>
       <CardContent>
@@ -30,13 +36,18 @@ export default function Project() {
               <p>
                 Ticketing platform for Filipino concert and entertainment events in Australia.
               </p>
+              <div>
+                <ul className="">
+                  <li>Developed and maintained frontend and backend features.</li>
+                  <li>Built admin dashboards with user management, real-time purchase tracking and push notifications.</li>
+                </ul>
+              </div>
             </CardContent>
             <CardContent>
               <div className="flex flex-wrap gap-2">
-                <Button variant='outline'>React</Button>
-                <Button variant='outline'>Laravel</Button>
-                <Button variant='outline'>Firebase</Button>
-                <Button variant='outline'>React Native</Button>
+                {lng.map((el, key) => (
+                  <Button variant='outline' key={key}>{el.l}</Button>
+                ))}
                 <a
                   href="https://apps.apple.com/ph/app/sana-all/id6456751289"
                   target="_blank"
