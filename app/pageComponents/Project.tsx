@@ -1,18 +1,56 @@
-import { Card, CardHeader, CardContent } from "@/components/ui/card";
-
-export default function Project(){
-    return (
-        <Card>
+import { Card, CardHeader, CardContent, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { ExternalLink } from "lucide-react";
+export default function Project() {
+  return (
+    <Card>
+      <CardContent>
+        <p className="font-bold">
+          Projects
+        </p>
         <CardContent>
-            <p className="font-bold">
-                Projects
-            </p>
+          <Card className="mt-5">
+            <CardHeader>
+              <div className="flex justify-between w-[100%]">
+                <div className="flex items-center">
+                  <img
+                    src="/icons/sana-all-vertical.png"
+                    alt="sn"
+                    className="w-15 h-17"
+                  />
+                  <div className="ml-5">
+                    <p className="font-medium text-[14px]">Sana All App</p>
+                    <p className="font-light text-[14px]"> Full Stack Software Engineer</p>
+                  </div>
+                </div>
+              </div>
+            </CardHeader>
             <CardContent>
               <p>
-                Coming soon.
+                Ticketing platform for Filipino concert and entertainment events in Australia.
               </p>
             </CardContent>
+            <CardContent>
+              <div className="flex flex-wrap gap-2">
+                <Button variant='outline'>React</Button>
+                <Button variant='outline'>Laravel</Button>
+                <Button variant='outline'>Firebase</Button>
+                <Button variant='outline'>React Native</Button>
+                <a
+                  href="https://apps.apple.com/ph/app/sana-all/id6456751289"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2"
+                >
+                  <ExternalLink />
+                  <span>Visit Project</span>
+                </a>
+              </div>
+            </CardContent>
+          </Card>
         </CardContent>
+      </CardContent>
     </Card>
-    )
+  )
 }
