@@ -7,7 +7,7 @@ export default function ContactMe() {
                 <p className="font-bold">
                     Contact
                 </p>
-                <CardContent className="flex mt-5">
+                <CardContent className="flex flex-wrap gap-5 mt-5">
                     <CardContent>
 
                         <a

@@ -11,14 +11,14 @@ import AboutMe from "./pageComponents/AboutMe";
 import Experience from "./pageComponents/Experience";
 import Skills from "./pageComponents/Skills";
 import Project from "./pageComponents/Project";
-import ContactMe from "./pageComponents/ContanctMe";
+import ContactMe from "./pageComponents/ContactMe";
 export default function HomePage() {
   return (
     <main className="min-h-screen bg-background text-foreground">
       {/* Header */}
       <Header />
       {/* Button text */}
-      <div className="max-w-2xl m-auto">
+      <div className="m-10 sm:m-auto max-w-2xl">
         <div className="flex flex-col">
 
           <div className="mt-10">
