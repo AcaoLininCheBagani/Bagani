@@ -18,7 +18,7 @@ export default function Skills() {
         <Card>
             <CardContent>
                 <p className="font-bold">
-                    Skills
+                    Skills & Tools
                 </p>
                 <div>
                     <CardContent>
