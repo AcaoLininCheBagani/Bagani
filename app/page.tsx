@@ -1,8 +1,4 @@
 // external components
-import ProjectCard from "@/components/ProjectCard";
-import { projects } from "@/data/projects";
-import { Separator } from "@/components/ui/separator"
-
 // components
 import Header from "@/components/Header";
 import Intro from "./pageComponents/Intro";
