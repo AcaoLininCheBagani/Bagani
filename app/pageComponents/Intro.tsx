@@ -7,8 +7,8 @@ export default function Intro() {
             <CardContent>
                 <div className="flex flex-row items-center ">
                     <ComputerIcon size={25} />
-                    <p className="text-[20px] ml-5">
-                        Hi! i'm Linin che bagani
+                    <p className="text-2xl md:text-4xl font-semibold animate-fade-in-up ml-5">
+                        Hello, i'm Linin che bagani
                     </p>
                 </div>
             </CardContent>

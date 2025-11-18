@@ -7,7 +7,16 @@ interface toggleInt {
 
 export default function ToggleComponent({src, alt} : toggleInt) {
     return (
-        <div className="grayscale hover:grayscale-0 transition duration-100">
+        <div 
+        style={{
+            MozAnimationDelay: '1000ms'
+        }}
+        className="
+        grayscale 
+        hover:grayscale-0 
+        transition 
+        duration-400 
+        ">
             <Toggle variant='outline' size="lg" className="h-20 w-20 ">
                 <img
                     src={src}

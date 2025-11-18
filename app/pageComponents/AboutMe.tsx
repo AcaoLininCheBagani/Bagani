@@ -10,7 +10,14 @@ export default function AboutMe() {
         link.click();
     }
     return (
-        <Card>
+        <Card  className="  border 
+           hover:border-blue-400/90 
+           transition-all 
+           duration-500 
+           select-none 
+           shadow-lg 
+           backdrop-blur-sm 
+           animate-fade-in-up ">
             <CardContent>
                 <p className="font-bold">
                     About me
