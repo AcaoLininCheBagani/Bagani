@@ -14,35 +14,41 @@ export default function HomePage() {
       {/* Header */}
       <Header />
       {/* Button text */}
-      <div className="m-10 sm:m-auto max-w-2xl">
-        <div className="flex flex-col">
-          <div className="mt-10">
+      <div className="m-10 sm:m-auto ">
+        <div className="flex flex-col m-auto max-w-4xl">
+          <div className="mt-10 m-auto max-w-2xl">
             <Intro />
           </div>
-          <div>
+          <div className="m-auto max-w-2xl">
             <p className="text-[25px] p-1 mt-5">
               Full stack software engineer building scalable web application with React and Laravel.
             </p>
           </div>
-          <div className="flex flex-wrap gap-4 mt-5 mb-5 items-center">
-            <InfoCard/>
+          <div className="flex flex-wrap gap-4 mt-5 mb-5 items-center m-auto max-w-2xl">
+            <InfoCard />
           </div>
-          <div>
-            <AboutMe />
+          <div className="flex flex-col md:flex-row justify-center md:gap-5 mb-5">
+            <div className="max-w-105">
+              <div>
+                <AboutMe />
+              </div>
+              <div className="">
+                <div className="mt-7 mb-7">
+                  <Experience />
+                </div>
+              </div>
+            </div>
+            <div className="max-w-96">
+              <Skills />
+            </div>
           </div>
-          <div className="mt-7">
-            <Experience />
+          {/* Projects */}
+          <div className="max-w-207">
+            <Project />
           </div>
-          <div className="mt-7">
-           <Skills/>
+          <div className="mt-7 ml-auto mr-auto max-w-207">
+            <ContactMe />
           </div>
-        </div>
-        {/* Projects */}
-        <div className="mt-7">
-          <Project/>
-        </div>
-        <div className="mt-7">
-          <ContactMe/>
         </div>
       </div>
       {/* Footer */}
