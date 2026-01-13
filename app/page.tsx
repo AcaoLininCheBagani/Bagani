@@ -43,7 +43,7 @@ export default function HomePage() {
             </div>
           </div>
           {/* Projects */}
-          <div className="max-w-207">
+          <div className="max-w-207 m-auto">
             <Project />
           </div>
           <div className="mt-7 ml-auto mr-auto max-w-207">
